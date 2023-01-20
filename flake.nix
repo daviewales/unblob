@@ -10,7 +10,7 @@
 
   outputs = { self, nixpkgs, poetry2nix, sasquatch }:
     let
-      system = "x86_64-linux";
+      system = "x86_64-darwin";
       pkgs = import nixpkgs {
         inherit system;
         overlays = [ self.overlays.default ];
